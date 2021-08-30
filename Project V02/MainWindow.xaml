@@ -1,0 +1,99 @@
+﻿<Window x:Class="roject_V01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:roject_V01"
+        mc:Ignorable="d"
+        
+        Title="DG Remixx " Height="450" Width="800" >
+    <Window.Background>
+        <ImageBrush ImageSource="images/bg.jpg" Stretch="Fill"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel >
+            <Menu  HorizontalAlignment="Left" Height="17" Margin="35,10,0,0" VerticalAlignment="Top" Width="33" Background="Tomato">
+                <MenuItem Header="_File" Background="Tomato" >
+                    <MenuItem Header="_Open" x:Name="Open_folder" Click="Open_folder_Click" Background="Tomato"/>
+                    <MenuItem Header="_Show Playlist" x:Name="Show_playlist" Click="Show_playlist_Click" Background="Tomato"/>
+                    <Separator/>
+                    <MenuItem Header="_Close" Click="MenuItem_Click" Background="Tomato"/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <StackPanel >
+            <ListBox HorizontalAlignment = "Right" VerticalAlignment = "Stretch" 
+                     MouseDoubleClick="playList_MouseDoubleClick"  x:Name="playList" 
+                     Height="366" Background="Tomato" Width="200"  FontWeight="DemiBold" >
+
+                <Button  x:Name="Hide_List" Content="Hide_PlayList" Width="75" Click="Hide_List_Click" FontWeight="Bold" Background="Tomato"/>
+            </ListBox>
+        </StackPanel>
+
+
+
+
+        <StackPanel HorizontalAlignment = "Stretch" VerticalAlignment = "Center" Margin="10,45,191,52">
+
+            <Border  BorderThickness="1" Height="238" Width="530">
+                <MediaElement  Name="myMedia" Margin="2" LoadedBehavior = "Manual" Width = "522" Height = "274"/>
+            </Border>
+
+
+            <!--<MediaElement x:Name = "myMedia" LoadedBehavior = "Manual" Width = "591" Height = "274"
+            Source = "C:\Users\amany\Downloads\Mohamed Fouad - Yamma (Music Video) l (محمد فؤاد - ياما (فيديو كليب-360p.mp4" />-->
+            <!--<Slider Name="Progress_Play" Value="0" Maximum="1" ValueChanged="Progress_Play_ValueChanged_1"/>-->
+
+            <ProgressBar x:Name="Progress_Play" PreviewMouseLeftButtonDown="Progress_Play_PreviewMouseLeftButtonDown" Foreground="Tomato"  Background="Black" Value="0" Height="17" Width="486" BorderBrush="Tomato" />
+            <StackPanel Orientation = "Horizontal" Margin = "0,10,0,0" Height="39" Width="562">
+                <Button Name="Playbtn" Click="Playbtn_Click" Width="40" Height="40" RenderTransformOrigin="0.522,0.299">
+                    <StackPanel>
+                        <Image Name="play" Source="images/Play.ico" Width="33" Height="40" />
+                    </StackPanel>
+                </Button>
+                <!--<Button Content = "Play" Margin = "0,0,10,10" Padding = "5"  x:Name ="Playbtn" Click = "Playbtn_Click" />-->
+                <Button Name="Pausebtn" Click="Pausebtn_Click" Width="40" Height="40" RenderTransformOrigin="0.522,0.299">
+                    <StackPanel>
+                        <Image Name="pause" Source="images/Pause (2).ico" Width="33" Height="40" />
+                    </StackPanel>
+                </Button>
+
+                <!--<Button Content = "Pause" Margin = "0,0,10,10" Padding = "5" x:Name ="Pausebtn" Click = "Pausebtn_Click" />-->
+                <Button Name="Mutebtn" Click="muteButt_Click" Width="40" Height="40" RenderTransformOrigin="0.522,0.299">
+                    <StackPanel>
+                        <Image Name="Mute" Source="images/micro.ico" Width="33" Height="40" />
+                    </StackPanel>
+                </Button>
+
+                <!--<Button Content = "Mute" Padding = "5" x:Name ="Mutebtn" Click = "muteButt_Click" Margin="0,0,0,10" />-->
+
+                <Button Name="backward_btn" Click="backward_btn_Click" Width="40" Height="40" RenderTransformOrigin="0.522,0.299">
+                    
+                    <StackPanel >
+                        <Image Name="backward" Source="images/Backward.ico" Width="33" Height="40"  />
+                    </StackPanel>
+                </Button>
+                <Label Name="speed" Content="1" Foreground="Tomato" Padding = "5" Height="25" Width="40"  Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" UseLayoutRounding="True" FontWeight="Bold" />
+                <Button Name="forward_btn" Click="forward_btn_Click" Width="40" Height="40" RenderTransformOrigin="0.522,0.299">
+                    <StackPanel>
+                        <Image Name="forward" Source="images/Forward.ico" Width="33" Height="40"  />
+                    </StackPanel>
+                </Button>
+
+
+                <Separator/>
+                <Label Content="Volume" FontWeight="Bold" Foreground="Tomato"/>
+                <Slider x:Name="Sound_Volume" Height="29" Width="100"  Minimum="0" Maximum="100" ValueChanged="Sound_Volume_ValueChanged" Margin="0,5"/>
+                <Label Name="progress_time" Content="00:00:00" FontWeight="Bold" Foreground="Tomato" Width="75"/>
+
+                <Label Name="song_Duration" Content="/ 00:00:00" FontWeight="Bold" Foreground="Tomato" Width="77"/>
+
+            </StackPanel>
+
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

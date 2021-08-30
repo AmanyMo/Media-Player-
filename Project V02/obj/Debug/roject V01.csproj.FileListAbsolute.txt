@@ -1,0 +1,14 @@
+C:\Users\amany\source\repos\WPF\roject V01\bin\Debug\roject V01.exe.config
+C:\Users\amany\source\repos\WPF\roject V01\bin\Debug\roject V01.exe
+C:\Users\amany\source\repos\WPF\roject V01\bin\Debug\roject V01.pdb
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01.csprojAssemblyReference.cache
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\MainWindow.g.cs
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\App.g.cs
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01_MarkupCompile.cache
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01_MarkupCompile.lref
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\MainWindow.baml
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01.g.resources
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject_V01.Properties.Resources.resources
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01.csproj.GenerateResource.cache
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01.exe
+C:\Users\amany\source\repos\WPF\roject V01\obj\Debug\roject V01.pdb
